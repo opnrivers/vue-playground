@@ -32,10 +32,10 @@
             class="nav-item nav-link">
             Home</router-link>
           <router-link
-            to="/about"
+            to="/todo"
             active-class="active"
             class="nav-item nav-link">
-            About</router-link>
+            Todo</router-link>
         </nav>
       </div>
     </div>
