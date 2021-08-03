@@ -4,23 +4,24 @@
 
     <div class="row">
       <div class="col-12 col-sm-8 col-lg-6 offset-sm-2 offset-lg-3">
-        <TodoInputGroup
+        <todo-input-group
           :options="priorities"
           @selected-class-name="selectedClassName"
           v-model="todoItem"
           @todo-item="addTodoItem"/>
 
-        <TodoFilterByPriority
+        <todo-filter-by-priority
           :options="[{
             option: 'All',
             value: 'all-priorities'
           }, ...priorities]"
           @filter-todo-items="filterTodoItems"
         />
-        <TodoList :items="filteredTodoItems"/>
+
+        <todo-list :items="filteredTodoItems"/>
       </div>
     </div>
   </div>
 </template>
 
-<script src="./Todo.js"></script>
+<script src="./todo.js"></script>

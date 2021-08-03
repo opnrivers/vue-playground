@@ -42,4 +42,4 @@
   </nav>
 </template>
 
-<script src="./Navbar.js"></script>
+<script src="./navbar.js"></script>

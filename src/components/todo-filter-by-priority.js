@@ -1,5 +1,5 @@
 export default {
-  name: 'TodoFilterByPriority',
+  name: 'todo-filter-by-priority',
   props: {
     options: Array,
   },

@@ -22,4 +22,4 @@
   </div>
 </template>
 
-<script src="./TodoFilterByPriority.js"></script>
+<script src="./todo-filter-by-priority.js"></script>

@@ -1,9 +1,9 @@
-import TodoInputGroup from '../components/TodoInputGroup.vue';
-import TodoFilterByPriority from '../components/TodoFilterByPriority.vue';
-import TodoList from '../components/TodoList.vue';
+import TodoInputGroup from '../components/todo-input-group.vue';
+import TodoFilterByPriority from '../components/todo-filter-by-priority.vue';
+import TodoList from '../components/todo-list.vue';
 
 export default {
-  name: 'Todo',
+  name: 'todo',
   components: {
     TodoInputGroup,
     TodoFilterByPriority,

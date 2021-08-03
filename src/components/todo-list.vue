@@ -18,5 +18,5 @@
   </div>
 </template>
 
-<script src="./TodoList.js"></script>
-<style lang="scss" scoped src="./TodoList.scss"></style>
+<script src="./todo-list.js"></script>
+<style lang="scss" scoped src="./todo-list.scss"></style>

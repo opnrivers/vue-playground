@@ -29,4 +29,4 @@
   </div>
 </template>
 
-<script src="./TodoInputGroup.js"></script>
+<script src="./todo-input-group.js"></script>

@@ -1,5 +1,5 @@
 export default {
-  name: 'TodoList',
+  name: 'todo-list',
   props: {
     items: Array,
   },

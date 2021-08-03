@@ -1,5 +1,5 @@
 export default {
-  name: 'Navbar',
+  name: 'navbar',
   props: {
     title: String,
   },

@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 
 export default {
-  name: 'TodoInputGroup',
+  name: 'todo-input-group',
   props: {
     options: Array,
   },
