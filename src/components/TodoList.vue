@@ -1,33 +1,18 @@
 <template>
   <div>
-    <div class="high-priority card mb-2">
+    <p v-if="!items.length">There are no items here.</p>
+    <div v-for="(item, index) in items"
+         :key="index"
+         :class="item.className"
+         class="card mb-2">
+
       <div class="card-body d-flex justify-content-between">
-        This is some text within a card body.
-        <button type="button" class="btn-close" aria-label="Close"></button>
-      </div>
-    </div>
-    <div class="medium-priority card mb-2">
-      <div class="card-body d-flex justify-content-between">
-        This is some text within a card body.
-        <button type="button" class="btn-close" aria-label="Close"></button>
-      </div>
-    </div>
-    <div class="medium-priority card mb-2">
-      <div class="card-body d-flex justify-content-between">
-        This is some text within a card body.
-        <button type="button" class="btn-close" aria-label="Close"></button>
-      </div>
-    </div>
-    <div class="high-priority card mb-2">
-      <div class="card-body d-flex justify-content-between">
-        This is some text within a card body.
-        <button type="button" class="btn-close" aria-label="Close"></button>
-      </div>
-    </div>
-    <div class="low-priority card mb-2">
-      <div class="card-body d-flex justify-content-between">
-        This is some text within a card body.
-        <button type="button" class="btn-close" aria-label="Close"></button>
+        {{ item.value }}
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Remove"
+          @click="removeTodo(index)"></button>
       </div>
     </div>
   </div>
