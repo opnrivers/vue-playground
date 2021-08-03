@@ -7,7 +7,7 @@
          class="card mb-2">
 
       <div class="card-body d-flex justify-content-between">
-        {{ item.value }}
+        {{ $filters.capitalize(item.value) }}
         <button
           type="button"
           class="btn-close"
