@@ -18,6 +18,20 @@
       heading: 'Heading 3',
       content: '<p>Content 3</p>'
     }]"></bs-accordion>
+
+    <hr class="my-5"/>
+
+    <bs-alert class="alert-warning alert-dismissible fade show">
+      Alert Component
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"></button>
+    </bs-alert>
+
+    <hr class="my-5"/>
+
   </div>
 </template>
 
