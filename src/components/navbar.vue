@@ -23,18 +23,22 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" :class="{ 'show': show }" id="navbar">
+      <div v-if="show" class="collapse navbar-collapse" :class="{ 'show': show }">
         <nav class="navbar-nav">
           <router-link
             to="/"
             active-class="active"
-            class="nav-item nav-link">
-            Home</router-link>
+            class="nav-item nav-link"
+            @click="toggle">
+            Home
+          </router-link>
           <router-link
             to="/todo"
             active-class="active"
-            class="nav-item nav-link">
-            Todo</router-link>
+            class="nav-item nav-link"
+            @click="toggle">
+            Todo
+          </router-link>
         </nav>
       </div>
     </div>

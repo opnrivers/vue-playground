@@ -8,4 +8,16 @@ export default {
       show: false,
     };
   },
+  mounted() {
+    window.addEventListener('resize', this.toggle);
+    window.dispatchEvent(new Event('resize'));
+  },
+  unmounted() {
+    window.removeEventListener('resize', this.toggle);
+  },
+  methods: {
+    toggle() {
+      this.show = window.innerWidth >= 992;
+    },
+  },
 };
