@@ -36,11 +36,6 @@
             active-class="active"
             class="nav-item nav-link">
             Todo</router-link>
-          <router-link
-            to="/bs-components"
-            active-class="active"
-            class="nav-item nav-link">
-            BS Components</router-link>
         </nav>
       </div>
     </div>
