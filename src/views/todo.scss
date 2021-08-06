@@ -1,0 +1,17 @@
+.high-priority,
+.medium-priority,
+.low-priority {
+  border-left-width: 4px;
+}
+
+.high-priority {
+  border-left-color: red;
+}
+
+.medium-priority {
+  border-left-color: orange;
+}
+
+.low-priority {
+  border-left-color: green;
+}
