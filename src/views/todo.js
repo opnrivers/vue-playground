@@ -1,5 +1,14 @@
+import FormInputGroup from '../components/form-input-group.vue';
+import FormSelect from '../components/form-select.vue';
+import FormButton from '../components/form-button.vue';
+
 export default {
   name: 'todo',
+  components: {
+    FormInputGroup,
+    FormSelect,
+    FormButton,
+  },
   data() {
     return {
       priorities: [{
@@ -35,7 +44,10 @@ export default {
     },
     removeItem(item, index) {
       this.filtered.splice(index, 1);
-      this.items.splice(this.items.indexOf(item), 1);
+
+      if (this.picked !== 'all-priorities') {
+        this.items.splice(this.items.indexOf(item), 1);
+      }
     },
     filterItems(picked) {
       if (picked === 'all-priorities') {

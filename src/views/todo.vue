@@ -4,27 +4,22 @@
 
     <div class="row">
       <div class="col-12 col-sm-10 col-md-8 col-lg-6 offset-sm-1 offset-md-2 offset-lg-3">
-        <div class="input-group mb-4">
-          <select class="form-select" style="flex: 0.2 1 auto;" v-model="selected">
-            <option
-              v-for="(item, index) in priorities"
-              :key="index"
-              :value="item.id">{{ item.label }}
-            </option>
-          </select>
-
-          <input
-            v-model="input"
-            type="text"
-            class="form-control">
-
-          <button
-            @click="addItem"
-            :disabled="!input.length"
-            class="btn btn-outline-primary"
-            type="button">Add
-          </button>
-        </div>
+        <form-input-group v-model="input" class="mb-4">
+          <template v-slot:left>
+            <form-select
+              style="flex: 0.2 1 auto;"
+              v-model="selected"
+              :options="priorities"
+              option="label"
+              value="id"></form-select>
+          </template>
+          <template v-slot:right>
+            <form-button
+              @click="addItem"
+              :disabled="!input.length"
+              class="btn-outline-primary">Add</form-button>
+          </template>
+        </form-input-group>
 
         <div class="d-flex justify-content-between mb-4">
 
