@@ -3,4 +3,9 @@ export default {
   props: {
     title: String,
   },
+  data() {
+    return {
+      show: false,
+    };
+  },
 };

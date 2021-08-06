@@ -16,15 +16,14 @@
       <button
         class="navbar-toggler"
         type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbar"
         aria-controls="navbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
+        :aria-expanded="show"
+        aria-label="Toggle navigation"
+        @click="show = !show">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbar">
+      <div class="collapse navbar-collapse" :class="{ 'show': show }" id="navbar">
         <nav class="navbar-nav">
           <router-link
             to="/"
