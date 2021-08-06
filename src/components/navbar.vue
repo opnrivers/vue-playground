@@ -32,6 +32,13 @@
             @click="toggle">
             Home
           </router-link>
+          <router-link
+            to="/todo"
+            active-class="active"
+            class="nav-item nav-link"
+            @click="toggle">
+            Todo
+          </router-link>
         </nav>
       </div>
     </div>
